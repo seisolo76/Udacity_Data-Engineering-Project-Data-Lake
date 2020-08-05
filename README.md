@@ -1,6 +1,6 @@
 # Project: Data Lake
 
-## Purpose
+## Introduction 
 A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
 I was tasked with building an ETL pipeline that extracts their data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. This will allow their analytics team to continue finding insights in what songs their users are listening to.
@@ -22,3 +22,10 @@ time - _timestamps of records in songplays broken into units in sperate columns_
 
 ![Project 3 Schema](https://github.com/seisolo76/UDACITY-Project-3-Data-Warehouse/blob/master/Project%203%20schema.png)
 
+## Project Files
+etl.py - main program to extract the data from s3 bucket. Transform from two data sources to five tables. write it back to s3 bucket in 5 directories with parquet files.
+dl.cfg - location of AWS Access key id and secret access key 
+README.MD - This file
+
+## Execute Script
+execute the ETL process using the python program named etl.py
